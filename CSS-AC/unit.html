@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+
+        /* % */
+
+        /* h1{
+            background-color: lightcoral;
+            border: 2px solid black;
+            width:50% ;
+             /* % always respective to the parent , here div is the child and body is the parent whose width is 100%  */
+        /* }  */ 
+
+        /* #outer{
+            height: 400px;
+            width: 400px;
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            margin: 10px;
+        } */
+        /* #inner{
+            height: 100px;
+            width: 100px;
+            background-color: darkslategrey;
+            margin-left: 10%;
+            /* 10% in respect of height or width of the parent; */
+
+        /* } */ 
+
+        /* Em */
+        #outer{
+            height: 400px;
+            width: 400px;
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            margin: 10px;
+            font-size: 50px;
+        }
+        #inner{
+            height: 100px;
+            width: 100px;
+            background-color: darkslategrey;
+            margin-left: 10%;
+            font-size: 0.5em;
+            /* Relative to parent font size if parent font size is 50px , childs will be 25px */
+            padding-left: 1em ;
+             /* padding margin always respective to itself */
+        }
+
+        /* dragbag of em  */
+        section{
+            font-size: 15px;
+        }
+        div{
+            /* font-size: 2em;  */
+            font-size: 2rem;
+            /* rem --> respect to its root element */
+            /* em--> respect to its closest(parent) or itself for paddingmargin */
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <div id="outer">
+        Outer Div
+        <div id="inner">Inner Div</div>
+    </div>
+
+        <!--drawback of Em -- (Nesting tag)s-->
+        <section>
+            section
+            <div>div1
+                <div>
+                    div2
+                    <div>
+                        div3
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>

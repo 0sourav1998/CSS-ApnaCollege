@@ -1,0 +1,26 @@
+h1{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+div{
+    height: 100px;
+    width: 600px;
+    /* border-width: 5px;
+    border-color: black;
+    border-style: solid; */
+    border: 5px solid black;
+    border-right: 5px solid greenyellow ;
+    border-radius: 20px;
+    /* border-bottom-right-radius:50px ; */
+    padding: 20px; 
+    /* padding from left righ top bottom */
+    padding: 10px 20px 30px 40px;
+    margin: 20px;
+    /* margin from left righ top bottom */
+}
+button{
+    background-color: grey;
+    margin-left :20px; ;
+    padding: 0 10px 0 10px;
+    border-radius: 10%;
+}

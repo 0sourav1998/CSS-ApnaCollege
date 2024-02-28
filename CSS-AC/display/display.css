@@ -1,0 +1,26 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: olive;
+    border: 2px solid black;
+    display: inline; 
+    /* when we convert a block element to inline various properties like hight width not working ,also padding and margin only working in respect of left and right but not top bottom , if we want to convert bloack element to inline without changing their style we must use inline-block */
+    display: inline-block;
+}
+span{
+    display: block;
+    /* for display: block all properties working; */
+    height: 100px;
+    width: 100px;
+    background-color: olive;
+    border: 2px solid black;
+}
+
+#firstDiv{
+    display: none;
+    /* div removed but sapce is not occupied */
+}
+#secondDiv{
+    visibility: hidden;
+    /* hidden but space occupied */
+}

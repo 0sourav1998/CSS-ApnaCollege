@@ -1,0 +1,14 @@
+.p::first-letter{
+    color: crimson;
+    font-weight: bold;
+}
+
+.p::first-line{
+    color: gold;
+    font-weight: bold;
+}
+
+p::selection{
+    color: blue;
+    text-decoration: line-through;
+}
